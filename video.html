@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+
+<html >
+<head>
+<style>
+
+video::-internal-media-controls-download-button {
+    display:none;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px); 
+}
+
+</style>
+  <script> 
+      function clear(){ 
+      Source=document.body.firstChild.data; 
+      document.open(); 
+      document.close(); 
+      document.title="看不到源代码"; 
+      document.body.innerHTML=Source; 
+      }</script> 
+</head>
+
+<body oncontextmenu=self.event.returnValue=false onselectstart="return false">
+
+    <video  id="myVideo" width="740px" controls>
+        <source src="qwe.mp4"  type="video/mp4">
+        您的浏览器不支持 HTML5 video 标签。
+    </video>
+    <script> 
+          function stop(){ 
+          return false; 
+          } 
+          document.oncontextmenu=stop; 
+    </script> 
+
+</body>
+
+</html>      
