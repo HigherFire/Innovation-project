@@ -1,0 +1,43 @@
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/pdfobject.js"></script>
+
+<script type="text/javascript">
+    window.onload = function() {
+
+        PDFObject.embed("${pageContext.request.contextPath}/upload/20160922000004.pdf", "#pdf");
+    };
+</script>
+
+<!DOCTYPE html>
+
+<html >
+<head>
+  <script> 
+      function clear(){ 
+      Source=document.body.firstChild.data; 
+      document.open(); 
+      document.close(); 
+      document.title="看不到源代码"; 
+      document.body.innerHTML=Source; 
+      }</script> 
+</head>
+
+<body oncontextmenu=self.event.returnValue=false onselectstart="return false">
+
+
+      <script> 
+          function stop(){ 
+          return false; 
+          } 
+          document.oncontextmenu=stop; 
+          </script> 
+
+<iframe src="概率第四章微课-优化后4.1.pdf" width="100%" height="100%">
+
+     <a href="概率第四章微课-优化后4.1.pdf">Download PDF</a>
+    
+    </iframe>
+
+</body>
+
+
+</html>      
