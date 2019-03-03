@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html >
 <head>
+    <link rel="stylesheet" href="https://mdui-aliyun.cdn.w3cbus.com/source/dist/css/mdui.min.css"/>
+    <script src="https://mdui-aliyun.cdn.w3cbus.com/source/dist/js/mdui.min.js"></script>
+
 <style>
 
 video::-internal-media-controls-download-button {
@@ -28,9 +31,9 @@ video::-webkit-media-controls-panel {
 </head>
 
 <body oncontextmenu=self.event.returnValue=false onselectstart="return false">
-
-    <video  id="myVideo" width="740px" controls>
-        <source src="../file/video/qwe.mp4"  type="video/mp4">
+    
+    <video  id="myVideo" class="mdui-video-fluid" controls>
+        <source src="../file/video/微课第三章例6_01.mp4"  type="video/mp4">
     </video>
     <script> 
         function stop(){ 

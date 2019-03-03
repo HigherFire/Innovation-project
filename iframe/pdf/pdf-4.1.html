@@ -96,6 +96,9 @@
     }
           
     </style>
+    <link rel="stylesheet" href="https://mdui-aliyun.cdn.w3cbus.com/source/dist/css/mdui.min.css"/>
+    <script src="https://mdui-aliyun.cdn.w3cbus.com/source/dist/js/mdui.min.js"></script>
+    
     <script> 
         function clear(){ 
         Source=document.body.firstChild.data; 
@@ -110,19 +113,64 @@
 <body oncontextmenu=self.event.returnValue=false onselectstart="return false">
 
 
-      <script> 
+    <script> 
           function stop(){ 
           return false; 
           } 
           document.oncontextmenu=stop; 
-          </script> 
+    </script> 
+    <div class="mdui-float-right">
+        <button class="mdui-btn mdui-btn-raised mdui-ripple" onclick="leftClick()"><i class="mdui-icon material-icons">arrow_back</i></button>
+        <button class="mdui-btn mdui-btn-raised mdui-ripple" onclick="rightClick()"><i class="mdui-icon material-icons">arrow_forward</i></button>
 
-<iframe src="../file/pdf/概率第四章微课-优化后4.1.pdf" width="100%" height="100%">
+    </div>
 
-     <a href="../file/pdf/概率第四章微课-优化后4.1.pdf">Download PDF</a>
-    
-    </iframe>
+<img class="mdui-img-fluid" id="test" src="../file/pdf/1/1_1/1_03.png">
 
+<script type="text/javascript">
+    function leftClick() {
+
+        var s = document.getElementById("test").src;
+        path = s.substring(0, s.lastIndexOf("/") + 1);
+        filename = s.substring(s.lastIndexOf("/") + 1, s.lastIndexOf("."));
+        type = s.substring(s.lastIndexOf("."));
+        num = parseInt(filename.substring(filename.lastIndexOf("_") + 1));
+
+        newnum = num - 1;
+        if (newnum <= 9) {
+            newpath = path + filename.replace(num, "0" + newnum) + type;
+        }
+        newpath = path + filename.replace(num, newnum) + type;
+
+        document.getElementById("test").onerror = function () {
+            document.getElementById("test").src = s;
+        }
+
+        document.getElementById("test").src = newpath
+    }
+
+    function rightClick() {
+
+        var s = document.getElementById("test").src;
+        path = s.substring(0, s.lastIndexOf("/") + 1);
+        filename = s.substring(s.lastIndexOf("/") + 1, s.lastIndexOf("."));
+        type = s.substring(s.lastIndexOf("."));
+        num = parseInt(filename.substring(filename.lastIndexOf("_") + 1));
+
+        newnum = num + 1;
+        if (newnum <= 9) {
+            newpath = path + filename.replace(num, "0" + newnum) + type;
+        }
+        newpath = path + filename.replace(num, newnum) + type;
+
+        document.getElementById("test").onerror = function () {
+            document.getElementById("test").src = s;
+        }
+        document.getElementById("test").src = newpath
+
+
+    }
+</script>
 </body>
 
 
