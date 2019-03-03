@@ -24,38 +24,20 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://mdui-aliyun.cdn.w3cbus.com/source/dist/css/mdui.min.css"/>
+
 </head>
 <body>
     <div class="hero-content">
-        <header class="site-header">
-            <div class="nav-bar">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-9 col-lg-3">
-                            <div class="site-branding">
-                                <a class="header-logo" href="index.html"><img src="images/logo.png" alt=""></a>
-
-                            </div><!-- .site-branding -->
-                        </div><!-- .col -->
-
-                        <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
-                            <nav class="site-navigation flex justify-content-end align-items-center">
-                                <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
-                                    <li class="current-menu-item"><a href="index.html">首页</a></li>
-                                    <li><a href="quiz.html">习题</a></li>
-                                    <li><a href="course_video.html">课程视频</a></li>
-                                    <li><a href="course_ppt.html">课件</a></li>
-                                    <li><a href="news.html">新闻</a></li>
-                                    <li><a href="introduction.html">课程介绍</a></li>
-
-                                </ul>
-                            </nav><!-- .site-navigation -->
-                        </div><!-- .col -->
-                    </div><!-- .row -->
-                </div><!-- .container -->
-            </div><!-- .nav-bar -->
-        </header><!-- .site-header -->
-
+            <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-toolbar-hide">
+                    <div class="mdui-toolbar mdui-color-indigo ">
+                          <a href="index.html"><img class="mdui-img-fluid" style="transform:scale(0.8)" src="images/logo.png" alt=""></a>
+        
+                    </div>
+                        
+                </div>
+        
         <div class="hero-content-overlay">
             <div class="container">
                 <div class="row">
@@ -68,10 +50,8 @@
                             <div class="entry-content">
                                 <p>学院链接：</p>
                             </div><!-- .entry-content -->
-
-                            <footer class="entry-footer read-more">
-                                <a href="http://math.tongji.edu.cn/">同济大学数学科学学院</a>
-                            </footer><!-- .entry-footer -->
+                            
+                            <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-indigo"><a class="mdui-text-color-white" href="http://math.tongji.edu.cn/">同济大学数学科学学院</a></button>
                         </div><!-- .hero-content-wrap -->
                     </div><!-- .col -->
                 </div><!-- .row -->
@@ -80,107 +60,402 @@
     </div><!-- .hero-content -->
 
     <div class="icon-boxes">
-        <div class="container-fluid">
-            <div class="flex flex-wrap align-items-stretch">
-                <div class="icon-box">
-                    <div class="icon">
-                        <span class="ti-pencil"></span>
-                    </div><!-- .icon -->
+            
+            <div class="mdui-tab mdui-tab-full-width" mdui-tab>
+                        <a href="#example6-tab1" class="mdui-ripple">
+                          <i class="mdui-icon material-icons">edit</i>
+                          <label>习题</label>
+                        </a>
+                        <a href="#example6-tab2" class="mdui-ripple">
+                          <i class="mdui-icon material-icons">description</i>
+                          <label>课件</label>
+                        </a>
+                        <a href="#example6-tab3" class="mdui-ripple">
+                            <i class="mdui-icon material-icons">videocam</i>                          
+                            <label>课程视频</label>
+                        </a>
+                        <a href="#example6-tab4" class="mdui-ripple">
+                            <i class="mdui-icon material-icons">language</i>
+                            <label>新闻</label>
+                        </a>
+                        <a href="#example6-tab5" class="mdui-ripple">
+                            <i class="mdui-icon material-icons">bookmark_border</i>
+                           <label>课程介绍</label>
+                        </a>
+            </div>
+            <div id="example6-tab1" class="mdui-p-a-2">
+                <div class="mdui-container mdui-center">
+                    <div class="mdui-panel" mdui-panel>
 
-                    <header class="entry-header">
-                        <h2 class="entry-title">习题</h2>
-                    </header><!-- .entry-header -->
-
-                    <div class="entry-content">
+                                <div class="mdui-panel-item">
+                                  <div class="mdui-panel-item-header">
+                                    <div class="mdui-typo-display-1">第一章</div>
+                                  </div>
+                                  <div class="mdui-panel-item-body">
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                      <a href="iframe/quiz/quiz-1.html"> 随机事件</a>
+                                    </button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                      <a href="iframe/quiz/quiz-2.html"> 等可能概型</a>
+                                    </button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                      <a href="iframe/quiz/quiz-1.html"> 频率与概率</a>
+                                    </button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block"></button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block"></button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block"></button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block"></button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block"></button>
+                                  </div>
+                                </div>
+                                
+                                <div class="mdui-panel-item">
+                                  <div class="mdui-panel-item-header"></div>
+                                  <div class="mdui-panel-item-body">
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                    </button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                    </button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                    </button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                    </button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                    </button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                    </button>
+  
+                                      </div>
+                                </div>                                  
+                                <div class="mdui-panel-item">
+                                    <div class="mdui-panel-item-header"></div>
+                                    <div class="mdui-panel-item-body">
+                                      <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                        <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                      </button>
+                                      <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                        <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                      </button>
+                                      <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                        <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                      </button>
+                                      <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                        <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                      </button>
+                                      <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                        <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                      </button>
+                                      <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                        <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                      </button>
+    
+                                        </div>
+                                  </div>    
+                                
+                        </div>
                         
-                        <div class="ti-car"><a  href="iframe/quiz/quiz-1.html"> 第一章：随机事件</a></div>
-                        <div class="ti-car"><a  href="iframe/quiz/quiz-1.html"> 第一章：等可能概型</a></div>
-                        <div class="ti-car"><a  href="iframe/quiz/quiz-1.html"> 第一章：频率与概率</a></div>
                         
+                </div>
+                <div class="mdui-divider-dark" style="margin-top:15px;"></div>
 
-                    </div><!-- .entry-content -->
+                <div class="mdui-row" style="margin-top:15px;">     
+                    <div class="mdui-col-md-4 mdui-float-right"><button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-indigo">
+                        <a class="mdui-text-color-white" href="quiz.html">read more</a></button></div>
+                </div>
+            </div>
+            <div id="example6-tab2" class="mdui-p-a-2">
+                    <div class="mdui-container mdui-center ">
+                            <div class="mdui-typo-display-1">---</div>
+                            <div class="mdui-panel" mdui-panel>
 
-                    <footer class="entry-footer read-more">
-                        <a href="quiz.html">read more<i class="fa fa-long-arrow-right"></i></a>
-                    </footer><!-- .entry-footer -->
-                </div><!-- .icon-box -->
+                              <div class="mdui-panel-item">
+                                <div class="mdui-panel-item-header">
+                                  <div class="mdui-typo-display-1">第一章</div>
+                                </div>
+                                <div class="mdui-panel-item-body">
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                </div>
+                              </div>
+                              
+                              <div class="mdui-panel-item">
+                                  <div class="mdui-panel-item-header"></div>
+                                  <div class="mdui-panel-item-body">
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                    </button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                    </button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                    </button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                    </button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                    </button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                    </button>
+  
+                                      </div>
+                                </div>
+                                <div class="mdui-panel-item">
+                                  <div class="mdui-panel-item-header"></div>
+                                  <div class="mdui-panel-item-body">
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                    </button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                    </button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                    </button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                    </button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                    </button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                    </button>
+  
+                                      </div>
+                                </div>                              
+                                <div class="mdui-panel-item">
+                                <div class="mdui-panel-item-header">第四章</div>
+                                  <div class="mdui-panel-item-body">
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                      <a  href="iframe/pdf/pdf-4.1.html"> 4.1</a>
+                                    </button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block"></button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block"></button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block"></button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block"></button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block"></button>                                      
+  
+                                </div>
+                              </div>
+                              <div class="mdui-panel-item">
+                                <div class="mdui-panel-item-header">第五章</div>
+                                  <div class="mdui-panel-item-body">
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                      <a  href="iframe/pdf/pdf-5.1.html"> 5.1</a>
+                                    </button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block"></button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block"></button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block"></button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block"></button>
+                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block"></button>                                      
+  
+                                </div>
+                              </div>
+                              <div class="mdui-panel-item">
+                                <div class="mdui-panel-item-header"></div>
+                                <div class="mdui-panel-item-body">
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
 
-                <div class="icon-box">
-                    <div class="icon">
-                        <span class="ti-files"></span>
-                    </div><!-- .icon -->
+                                    </div>
+                              </div>
+                              <div class="mdui-panel-item">
+                                <div class="mdui-panel-item-header"></div>
+                                <div class="mdui-panel-item-body">
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
 
-                    <header class="entry-header">
-                        <h2 class="entry-title">课件</h2>
-                    </header><!-- .entry-header -->
+                                    </div>
+                              </div>
+                              <div class="mdui-panel-item">
+                                <div class="mdui-panel-item-header"></div>
+                                <div class="mdui-panel-item-body">
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
 
-                    <div class="entry-content">
-                        <div class="ti-car"><a  href="iframe/pdf/pdf-4.1.html"> 4.1</a></div>
-                        <div class="ti-car"><a  href="iframe/pdf/pdf-5.1.html"> 5.1</a></div>
-                    </div><!-- .entry-content -->
+                                    </div>
+                              </div>
+                              <div class="mdui-panel-item">
+                                <div class="mdui-panel-item-header"></div>
+                                <div class="mdui-panel-item-body">
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
+                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
+                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  </button>
 
-                    <footer class="entry-footer read-more">
-                        <a href="course_ppt.html">read more<i class="fa fa-long-arrow-right"></i></a>
-                    </footer><!-- .entry-footer -->
-                </div><!-- .icon-box -->
+                                    </div>
+                              </div>                              
+                      </div>                                                      
+                    </div>
+                    <div class="mdui-divider-dark"></div>
 
-                <div class="icon-box1">
-                    <div class="icon">
-                        <span class="ti-video-camera"></span>
-                    </div><!-- .icon -->
+                    <div class="mdui-row" style="margin-top:15px;">     
+                        <div class="mdui-col-md-4 mdui-float-right"><button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-indigo">
+                            <a class="mdui-text-color-white" href="course_ppt.html">read more</a></button>  </div>
+                    </div>                        
+            </div>
+            
+            
+            <div id="example6-tab3" class="mdui-p-a-2">
+                    <div class="mdui-container mdui-center ">
+                            <div class="mdui-typo-display-1">---</div>
+                            <ul class="mdui-list">
+                                    <li class="mdui-list-item mdui-ripple">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                      <div class="mdui-list-item-content"><a  href="iframe/video/video-1.html">测试视频</a></div>
+                                    </li>
+                            </ul> 
+                            
+                    </div>
+                    <div class="mdui-divider-dark"></div>
 
-                    <header class="entry-header">
-                        <h2 class="entry-title">课程视频</h2>
-                    </header><!-- .entry-header -->
+                    <div class="mdui-row" style="margin-top:15px;">     
+                        <div class="mdui-col-md-4 mdui-float-right"><button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-indigo">
+                            <a class="mdui-text-color-white" href="course_video.html">read more</a></button>  </div>
+                    </div>    
+            </div>
+            <div id="example6-tab4" class="mdui-p-a-2">
+                    <div class="mdui-container mdui-center">
+                            <ul class="mdui-list">
+                                    <li class="mdui-list-item mdui-ripple">
+                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                      <div class="mdui-list-item-content"><a  href="#"> 尚无数据</a></div>
+                                    </li>
+                            </ul> 
+                            
+                    </div>
+                    <div class="mdui-divider-dark"></div>
 
-                    <div class="entry-content">
-                        <div class="ti-car"><a  href="iframe/video/video-1.html"> 测试视频</a></div>
-                    </div><!-- .entry-content -->
+                    <div class="mdui-row" style="margin-top:15px;">     
+                        <div class="mdui-col-md-4 mdui-float-right"><button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-indigo">
+                            <a class="mdui-text-color-white" href="news.html">read more</a></button>  </div>
+                    </div>
+            </div>
+            <div id="example6-tab5" class="mdui-p-a-2">
+                    <div class="mdui-container mdui-center">
+                            <div class="mdui-card">
+                                    <div class="mdui-card-media">
+                                        <a href="introduction.html">
+                                      <img src="iframe/file/img/exam.png"/>
+                                      <div class="mdui-card-media-covered">
+                                        <div class="mdui-card-primary">
+                                          <div class="mdui-card-primary-title">Title</div>
+                                        </div>
+                                      </div>
+                                    </a>
+                                    </div>
+                                    <div class="mdui-card-actions">
+                                      <button class="mdui-btn mdui-ripple">详情</button>
+                                    </div>
+                            </div>
+                            
+                    </div>
+                    <div class="mdui-divider-dark"style="margin-top:15px;"></div>
+                    <div class="mdui-row" style="margin-top:15px;">     
+                        <div class="mdui-col-md-4 mdui-float-right"><button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-indigo">
+                            <a class="mdui-text-color-white" href="introduction.html">read more</a></button>  </div>
+                    </div>                    
+            </div>
 
-                    <footer class="entry-footer read-more">
-                        <a href="course_video.html">read more<i class="fa fa-long-arrow-right"></i></a>
-                    </footer><!-- .entry-footer -->
-                </div><!-- .icon-box -->
-
-                <div class="icon-box">
-                    <div class="icon">
-                        <span class="ti-world"></span>
-                    </div><!-- .icon -->
-
-                    <header class="entry-header">
-                        <h2 class="entry-title">新闻</h2>
-                    </header><!-- .entry-header -->
-
-                    <div class="entry-content">
-                        <div class="ti-car"><a  href="#"> 尚无数据</a></div>
-                    </div><!-- .entry-content -->
-
-                    <footer class="entry-footer read-more">
-                        <a href="news.html">read more<i class="fa fa-long-arrow-right"></i></a>
-                    </footer><!-- .entry-footer -->
-                </div><!-- .icon-box -->
-                <div class="icon-box">
-                    <div class="icon">
-                        <span class="ti-bookmark"></span>
-                    </div><!-- .icon -->
-
-                    <header class="entry-header">
-                        <h2 class="entry-title">课程介绍</h2>
-                    </header><!-- .entry-header -->
-
-                    <div class="entry-content">
-                        <div class="ti-car"><a  href="introduction.html"><img src="iframe/file/img/exam.png"></a></div>
-
-                    </div><!-- .entry-content -->
-
-                    <footer class="entry-footer read-more">
-                        <a href="introduction.html">read more<i class="fa fa-long-arrow-right"></i></a>
-                    </footer><!-- .entry-footer -->
-                </div><!-- .icon-box -->
-
-            </div><!-- .row -->
-        </div><!-- .container-fluid -->
-    </div><!-- .icon-boxes -->
+        </div>
 
     <footer class="site-footer">
         <div class="footer-widgets">
@@ -226,6 +501,8 @@
 <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
 <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
 <script type='text/javascript' src='js/custom.js'></script>
+<script src="https://mdui-aliyun.cdn.w3cbus.com/source/dist/js/mdui.min.js"></script>
+
 
 </body>
 </html>
