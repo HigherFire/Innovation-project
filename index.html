@@ -25,6 +25,8 @@
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet/less" type="text/css" href="css/carousel.less">
+    
     <link rel="stylesheet" href="https://mdui-aliyun.cdn.w3cbus.com/source/dist/css/mdui.min.css"/>
 
 </head>
@@ -58,7 +60,25 @@
             </div><!-- .container -->
         </div><!-- .hero-content-hero-content-overlay -->
     </div><!-- .hero-content -->
-
+    <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+          <div class="active item">
+            <img src="images/logo.png" alt>
+          </div>
+          <div class="item">…</div>
+          <div class="item">…</div>
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      </div>
+    </div>
     <div class="icon-boxes">
             
             <div class="mdui-tab mdui-tab-full-width" mdui-tab>
@@ -96,8 +116,7 @@
 
 
                       </div>
-                        
-                        
+       
                 </div>
                 <div class="mdui-divider-dark" style="margin-top:15px;"></div>
 
@@ -108,7 +127,6 @@
             </div>
             <div id="example6-tab2" class="mdui-p-a-2">
               <div class="mdui-container mdui-center ">
-                <div class="mdui-typo-display-1">---</div>
                   <div class="mdui-panel" mdui-panel>
                     <div class="mdui-panel-item">
                       <div class="mdui-panel-item-header">
@@ -127,7 +145,6 @@
                                     <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
                                     <a href="subpages/ppt/ppt-1.html">频率与概率</a>
                                   </button>
-                                    <!-- ppt-x.html是第x章节课件的首页，在首页上每一章下的小节均跳向本章的首页，即ppt-x.html。-->
                                   
                           </div>
                         </div>
@@ -183,8 +200,6 @@
             
             <div id="example6-tab3" class="mdui-p-a-2">
                     <div class="mdui-container mdui-center ">
-                            <div class="mdui-typo-display-1">---</div>
-
                     <div class="mdui-panel mdui-panel-popout" mdui-panel>
 
                             <div class="mdui-panel-item">
@@ -218,11 +233,11 @@
                                 <div class="mdui-panel-item-body">
                                   <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
                                     <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                    <a target="targe"  href="subpages/video/video-3.html">微课第三章例5</a>
+                                    <a href="subpages/video/video-3.html">微课第三章例5</a>
                                   </button>
                                   <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
                                     <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                    <a target="targe"  href="subpages/video/video-3.html">微课第三章例6</a>
+                                    <a href="subpages/video/video-3.html">微课第三章例6</a>
                                   </button>
 
 
@@ -286,13 +301,9 @@
                                       <img src="introduction/安排事项/2017-2018第一学期课程考试安排.png"/>
                                       <div class="mdui-card-media-covered">
                                         <div class="mdui-card-primary">
-                                          <div class="mdui-card-primary-title">Title</div>
                                         </div>
                                       </div>
                                     </a>
-                                    </div>
-                                    <div class="mdui-card-actions">
-                                      <button class="mdui-btn mdui-ripple">详情</button>
                                     </div>
                             </div>
                             
@@ -345,6 +356,7 @@
 
     </footer><!-- .site-footer -->
 
+<script type='text/javascript' src='js/bootstrap-carousel.js'></script>
 <script type='text/javascript' src='js/jquery.js'></script>
 <script type='text/javascript' src='js/swiper.min.js'></script>
 <script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
