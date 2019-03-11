@@ -332,7 +332,7 @@ a:hover, a:active {
 # Hero Section
 --------------------------------------------------------------*/
 .hero-content {
-    background: url("images/hero-bg.jpg") no-repeat center;
+    background: #757686;
     background-size: cover;
 }
 
