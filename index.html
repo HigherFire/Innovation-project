@@ -74,48 +74,71 @@
         <div class="icon-boxes">
             
             <div class="mdui-tab mdui-tab-full-width" mdui-tab>
-                        <a href="#example6-tab1" class="mdui-ripple">
+                        <a href="#quiz" class="mdui-ripple">
                           <i class="mdui-icon material-icons">edit</i>
                           <label>习题</label>
                         </a>
-                        <a href="#example6-tab2" class="mdui-ripple">
+                        <a href="#ppt" class="mdui-ripple">
                           <i class="mdui-icon material-icons">description</i>
                           <label>课件</label>
                         </a>
-                        <a href="#example6-tab3" class="mdui-ripple">
-                            <i class="mdui-icon material-icons">videocam</i>                          
-                            <label>课程视频</label>
+                        <a href="#video" class="mdui-ripple">
+                          <i class="mdui-icon material-icons">videocam</i>                          
+                          <label>课程视频</label>
                         </a>
-                        <a href="#example6-tab4" class="mdui-ripple">
+                        <a href="#news" class="mdui-ripple">
                             <i class="mdui-icon material-icons">language</i>
                             <label>新闻</label>
                         </a>
-                        <a href="#example6-tab5" class="mdui-ripple">
+                        <a href="#introduction" class="mdui-ripple">
                             <i class="mdui-icon material-icons">bookmark_border</i>
                            <label>课程介绍</label>
                         </a>
             </div>
-            <div id="example6-tab1" class="mdui-p-a-2">
+            <div id="quiz" class="mdui-p-a-2">
                 <div class="mdui-container mdui-center">
-                    <div class="mdui-list">
-                        <a class="mdui-list-item mdui-ripple" mdui-dialog="{target: '#notice'}"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>第一章</a>
-                        <a class="mdui-list-item mdui-ripple" mdui-dialog="{target: '#notice'}"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>第二章</a>
-                        <a class="mdui-list-item mdui-ripple" mdui-dialog="{target: '#notice'}"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>第三章</a>
-                        <a href="subpages/quiz/quiz-4.html" class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>第四章</a>
-                        <a href="subpages/quiz/quiz-5.html" class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>第五章</a>
-                        <a href="subpages/quiz/quiz-p1.html" class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>往年试卷1</a>
-                        <a href="subpages/quiz/quiz-p2.html" class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>往年试卷2</a>
-                        <a href="subpages/quiz/quiz-s1_2.html" class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>spoc第二、三章测试</a>
+                    <ul class="mdui-list">
+                        <li class="mdui-list-item mdui-ripple" mdui-dialog="{target: '#notice'}">
+                            <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                            <div class="mdui-list-item-content">第一章</div>
+                        </li>
+                        <li class="mdui-list-item mdui-ripple" mdui-dialog="{target: '#notice'}">
+                            <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                            <div class="mdui-list-item-content">第二章</div>
+                        </li>
+                        <li class="mdui-list-item mdui-ripple" mdui-dialog="{target: '#notice'}">
+                            <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                            <div class="mdui-list-item-content">第三章</div>
+                        </li>
+                        <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/quiz/quiz-4.html'">
+                            <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                            <div class="mdui-list-item-content">第四章</div>
+                        </li>
+                        <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/quiz/quiz-5.html'">
+                            <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                            <div class="mdui-list-item-content">第五章</div>
+                        </li>
+                        <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/quiz/quiz-p1.html'">
+                            <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                            <div class="mdui-list-item-content">往年试卷1</div>
+                        </li>
+                        <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/quiz/quiz-p2.html'">
+                            <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                            <div class="mdui-list-item-content">往年试卷2</div>
+                        </li>
+                        <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/quiz/quiz-s1_2.html'">
+                            <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                            <div class="mdui-list-item-content">spoc第二、三章测试</div>
+                        </li>
 
-
-
-                      </div>
-       
+                      </ul>
+        
+          
                 </div>
                 <div class="mdui-divider-dark" style="margin-top:25px;margin-bottom: 15px"></div>
 
             </div>
-            <div id="example6-tab2" class="mdui-p-a-2">
+            <div id="ppt" class="mdui-p-a-2">
               <div class="mdui-container mdui-center ">
                   <div class="mdui-panel" mdui-panel>
                     <div class="mdui-panel-item">
@@ -123,241 +146,262 @@
                         <h4>第一章:随机事件与概率</h4>
                       </div>
                       <div class="mdui-panel-item-body">
-                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                    <a z href="subpages/ppt/ppt-1.html">样本空间和随机事件关系和运算</a>
-                                  </button>
-                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                    <a z href="subpages/ppt/ppt-1.html">等可能概型</a>
-                                  </button>
-                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                    <a z href="subpages/ppt/ppt-1.html">频率与概率</a>
-                                  </button>
-                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                    <a z href="subpages/ppt/ppt-1.html">概率的公理化定义与性质</a>
-                                  </button>
-                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                    <a z href="subpages/ppt/ppt-1.html">条件概率与事件的独立性</a>
-                                  </button>
-                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                    <a z href="subpages/ppt/ppt-1.html">全概率公式与贝叶斯公式</a>
-                                  </button>
+                          <ul class="mdui-list">
+                              <li class="mdui-list-item mdui-ripple " onclick="self.location='subpages/ppt/ppt-1.html'">
+                                <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                <div class="mdui-list-item-content ">样本空间和随机事件关系和运算</div>
+                              </li>                     
+                              <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/ppt/ppt-1.html'">
+                                <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                <div class="mdui-list-item-content">等可能概型</div>
+                              </li>
+                              <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/ppt/ppt-1.html'">
+                                <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                <div class="mdui-list-item-content">频率与概率</div>
+                              </li>
+                              <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/ppt/ppt-1.html'">
+                                <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                <div class="mdui-list-item-content">概率的公理化定义与性质</div>
+                              </li>
+                              <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/ppt/ppt-1.html'">
+                                <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                <div class="mdui-list-item-content">条件概率与事件的独立性</div>
+                              </li>
+                              <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/ppt/ppt-1.html'">
+                                <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                <div class="mdui-list-item-content">全概率公式与贝叶斯公式</div>
+                              </li>
+                          </ul>
 
-                          </div>
-                        </div>
+                      </div>
+                    </div>
                               
                     <div class="mdui-panel-item">
                         <div class="mdui-panel-item-header">
                           <h4>第二章:随机变量及其分布</h4>
                         </div>
-                            <div class="mdui-panel-item-body">
-                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                    <a z href="subpages/ppt/ppt-2.html">随机变量及其分布函数</a>
+                        <div class="mdui-panel-item-body">
+                            <ul class="mdui-list">
+                                <li class="mdui-list-item mdui-ripple " onclick="self.location='subpages/ppt/ppt-2.html'">
+                                  <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  <div class="mdui-list-item-content">随机变量及其分布函数</div>
+                                </li>                     
+                                <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/ppt/ppt-2.html'">
+                                  <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  <div class="mdui-list-item-content">概率函数</div>
+                                </li>
+                                <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/ppt/ppt-2.html'">
+                                  <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  <div class="mdui-list-item-content">常用离散随机变量型</div>
+                                </li>
+                                <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/ppt/ppt-2.html'">
+                                  <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  <div class="mdui-list-item-content">二维随机变量及其分布</div>
+                                </li>
+                                <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/ppt/ppt-2.html'">
+                                  <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  <div class="mdui-list-item-content">随机变量的独立性与条件分布</div>
+                                </li>
+                                <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/ppt/ppt-2.html'">
+                                  <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  <div class="mdui-list-item-content">随机变量函数的分布</div>
+                                </li>
 
-                                  </button>
-                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                    <a z href="subpages/ppt/ppt-2.html">概率函数</a>
-
-                                  </button>
-                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                    <a z href="subpages/ppt/ppt-2.html">常用离散随机变量型</a>
-
-                                  </button>
-                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                    <a z href="subpages/ppt/ppt-2.html">二维随机变量及其分布</a>
-
-                                  </button>
-                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                    <a z href="subpages/ppt/ppt-2.html">随机变量的独立性与条件分布</a>
-
-                                  </button>
-                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                    <a z href="subpages/ppt/ppt-2.html">随机变量函数的分布</a>
-
-                                  </button>
-
-                              </div>
+                            </ul>
+  
+                        </div>
+  
                     </div>                                  
                     <div class="mdui-panel-item">
-                                  <div class="mdui-panel-item-header">
-                                    <h4>第三章:连续型随机变量及其分布</h4>
+                        <div class="mdui-panel-item-header">
+                            <h4>第三章:连续型随机变量及其分布</h4>
+                        </div>
+                        <div class="mdui-panel-item-body">
+                            <ul class="mdui-list">
+                                <li class="mdui-list-item mdui-ripple " onclick="self.location='subpages/ppt/ppt-3.html'">
+                                  <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  <div class="mdui-list-item-content ">分布函数</div>
+                                </li>                     
+                                <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/ppt/ppt-3.html'">
+                                  <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  <div class="mdui-list-item-content">概率密度函数</div>
+                                </li>
+                                <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/ppt/ppt-3.html'">
+                                  <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  <div class="mdui-list-item-content">常用离散随机变量型</div>
+                                </li>
+                                <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/ppt/ppt-3.html'">
+                                  <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  <div class="mdui-list-item-content">二维随机变量及其分布</div>
+                                </li>
+                                <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/ppt/ppt-3.html'">
+                                  <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  <div class="mdui-list-item-content">随机变量的独立性与条件分布</div>
+                                </li>
+                                <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/ppt/ppt-3.html'">
+                                  <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  <div class="mdui-list-item-content">随机变量函数的分布</div>
+                                </li>
 
-                                  </div>
-                                  <div class="mdui-panel-item-body">
-                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                      <a z href="subpages/ppt/ppt-3.html">分布函数</a>
-                                    </button>
-                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                      <a z href="subpages/ppt/ppt-3.html">概率密度函数</a>
-                                    </button>
-                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                      <a z href="subpages/ppt/ppt-3.html">常用连续型随机变量</a>
-                                    </button>
-                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                      <a z href="subpages/ppt/ppt-3.html">二维随机变量及其分布</a>
-                                    </button>
-                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                      <a z href="subpages/ppt/ppt-3.html">随机变量的独立性与条件分布</a>
-                                    </button>
-                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                      <a z href="subpages/ppt/ppt-3.html">随机变量函数的分布</a>
-                                    </button>
+                            </ul>
   
-                                      </div>
-                                </div>    
+                        </div>
+
+                    </div>    
                     <div class="mdui-panel-item">
-                                  <div class="mdui-panel-item-header">
-                                    <h4>第四章:随机变量的数字特征</h4>
+                        <div class="mdui-panel-item-header">
+                            <h4>第四章:随机变量的数字特征</h4>
+                        </div>
+                        <div class="mdui-panel-item-body">
+                            <ul class="mdui-list">
+                                <li class="mdui-list-item mdui-ripple " onclick="self.location='subpages/ppt/ppt-4.html'">
+                                  <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  <div class="mdui-list-item-content ">数学期望</div>
+                                </li>                     
+                                <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/ppt/ppt-4.html'">
+                                  <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  <div class="mdui-list-item-content">方差与标准差</div>
+                                </li>
+                                <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/ppt/ppt-4.html'">
+                                  <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  <div class="mdui-list-item-content">协方差与相关系数</div>
+                                </li>
+                                <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/ppt/ppt-4.html'">
+                                  <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  <div class="mdui-list-item-content">矩与协方差矩阵</div>
+                                </li>
+                                <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/ppt/ppt-4.html'">
+                                  <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  <div class="mdui-list-item-content">两个不等式</div>
+                                </li>
 
-                                  </div>
-                                  <div class="mdui-panel-item-body">
-                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                      <a z href="subpages/ppt/ppt-4.html">数学期望</a>
-
-                                    </button>
-                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                      <a z href="subpages/ppt/ppt-4.html">方差与标准差</a>
-
-                                    </button>
-                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                      <a z href="subpages/ppt/ppt-4.html">协方差与相关系数</a>
-
-                                    </button>
-                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                      <a z href="subpages/ppt/ppt-4.html">矩与协方差矩阵</a>
-
-                                    </button>
-                                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                      <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                      <a z href="subpages/ppt/ppt-4.html">两个不等式</a>
-
-                                    </button>
+                            </ul>
   
-                                      </div>
-                                </div>                                  
+                        </div>
+
+                    </div>                                  
                     <div class="mdui-panel-item">
-                                    <div class="mdui-panel-item-header">
-                                      <h4>第五章:随机变量序列的极限</h4>
+                        <div class="mdui-panel-item-header">
+                            <h4>第五章:随机变量序列的极限</h4>
+                        </div>
+                        <div class="mdui-panel-item-body">
+                            <ul class="mdui-list">
+                                <li class="mdui-list-item mdui-ripple " onclick="self.location='subpages/ppt/ppt-5.html'">
+                                  <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  <div class="mdui-list-item-content ">大数定律</div>
+                                </li>                     
+                                <li class="mdui-list-item mdui-ripple" onclick="self.location='subpages/ppt/ppt-5.html'">
+                                  <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                  <div class="mdui-list-item-content">中心极限定理</div>
+                                </li>
 
-                                    </div>
-                                    <div class="mdui-panel-item-body">
-                                      <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                        <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                        <a z href="subpages/ppt/ppt-5.html">大数定律</a>
+                            </ul>
+  
+                        </div>
 
-                                      </button>
-                                      <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                        <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                        <a z href="subpages/ppt/ppt-5.html">中心极限定理</a>
-
-                                      </button>
-    
-                                        </div>
-                                  </div>    
+                    </div>    
                                 
                               
                   </div>
                 </div>
                 <div class="mdui-divider-dark" style="margin-top:25px;margin-bottom: 15px"></div>
-              </div>
+            </div>
             
             
-            <div id="example6-tab3" class="mdui-p-a-2">
-                    <div class="mdui-container mdui-center ">
+            <div id="video" class="mdui-p-a-2">
+                <div class="mdui-container mdui-center ">
                     <div class="mdui-panel mdui-panel-popout" mdui-panel>
 
                             <div class="mdui-panel-item" mdui-dialog="{target: '#notice'}">
                               <div class="mdui-panel-item-header">
-                                <h4>第一章</h4>
+                                <h4>第一章:随机事件与概率</h4>
                               </div>
                               <div class="mdui-panel-item-body">
-                                <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                  <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                </button>
+                                  <ul class="mdui-list">
+                                      <li class="mdui-list-item mdui-ripple " onclick="self.location=''">
+                                        <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                        <div class="mdui-list-item-content "></div>
+                                      </li>                     
+      
+                                  </ul>
+        
                               </div>
                             </div>
                             
                             <div class="mdui-panel-item" mdui-dialog="{target: '#notice'}">
                                 <div class="mdui-panel-item-header">
-                                  <h4>第二章</h4>
+                                  <h4>第二章:随机变量及其分布</h4>
 
                                 </div>
                                 <div class="mdui-panel-item-body">
-                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                    <a></a>
-                                  </button>
+                                    <ul class="mdui-list">
+                                        <li class="mdui-list-item mdui-ripple " onclick="self.location=''">
+                                          <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                          <div class="mdui-list-item-content "></div>
+                                        </li>                     
+        
+                                    </ul>
+          
+                                </div>
+                            </div>
 
-                                    </div>
-                              </div>
-                              <div class="mdui-panel-item">
+                            <div class="mdui-panel-item">
                                 <div class="mdui-panel-item-header">
-                                  <h4>第三章</h4>
+                                  <h4>第三章:连续型随机变量及其分布</h4>
 
                                 </div>
                                 <div class="mdui-panel-item-body">
-                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                    <a href="subpages/video/video-3.html">微课第三章例5</a>
-                                  </button>
-                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                    <a href="subpages/video/video-3.html">微课第三章例6</a>
-                                  </button>
+                                    <ul class="mdui-list">
+                                        <li class="mdui-list-item mdui-ripple " onclick="self.location='subpages/video/video-3.html'">
+                                          <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                          <div class="mdui-list-item-content ">微课第三章例5</div>
+                                        </li>                     
+                                        <li class="mdui-list-item mdui-ripple " onclick="self.location='subpages/video/video-3.html'">
+                                            <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                            <div class="mdui-list-item-content ">微课第三章例6</div>
+                                        </li>                     
+          
+                                    </ul>
+          
+                                </div>  
+                            </div>   
 
-
-                                    </div>
-                              </div>                              
-                              <div class="mdui-panel-item" mdui-dialog="{target: '#notice'}">
+                            <div class="mdui-panel-item" mdui-dialog="{target: '#notice'}">
                               <div class="mdui-panel-item-header">
-                                <h4>第四章</h4>
+                                <h4>第四章:随机变量的数字特征</h4>
 
                               </div>
-                                <div class="mdui-panel-item-body">
-                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                  </button>
-
+                              <div class="mdui-panel-item-body">
+                                  <ul class="mdui-list">
+                                      <li class="mdui-list-item mdui-ripple " onclick="self.location=''">
+                                        <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                        <div class="mdui-list-item-content "></div>
+                                      </li>                     
+      
+                                  </ul>
+        
                               </div>
                             </div>
                             <div class="mdui-panel-item" mdui-dialog="{target: '#notice'}">
                               <div class="mdui-panel-item-header">
-                                <h4>第五章</h4>
-
+                                <h4>第五章:随机变量序列的极限</h4>
                               </div>
-                                <div class="mdui-panel-item-body">
-                                  <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-btn-block">
-                                    <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
-                                  </button>
-
+                              <div class="mdui-panel-item-body">
+                                  <ul class="mdui-list">
+                                      <li class="mdui-list-item mdui-ripple " onclick="self.location=''">
+                                        <i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>
+                                        <div class="mdui-list-item-content "></div>
+                                      </li>                     
+      
+                                  </ul>
+        
                               </div>
                             </div>
                     </div>                              
-                    </div>                                                                                  
-                    <div class="mdui-divider-dark" style="margin-top:25px;margin-bottom: 15px"></div>
-                  </div>
-            <div id="example6-tab4" class="mdui-p-a-2">
+                </div>                                                                                  
+                <div class="mdui-divider-dark" style="margin-top:25px;margin-bottom: 15px"></div>
+            </div>
+            <div id="news" class="mdui-p-a-2">
                     <div class="mdui-container mdui-center">
                             <ul class="mdui-list">
                                     <li class="mdui-list-item mdui-ripple">
@@ -368,13 +412,16 @@
                             
                     </div>
                     <div class="mdui-divider-dark" style="margin-top:25px;margin-bottom: 15px"></div>
-                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-indigo mdui-col-offset-md-10">
-                      <i class="mdui-icon material-icons">turned_in_not</i><a href="news.html" class="mdui-text-color-white-text">read more</a>
-                    </button>
+                    <a href="news.html" class="mdui-text-color-white-text">
+                        <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-indigo mdui-col-offset-md-10">
+                            <i class="mdui-icon material-icons">turned_in_not</i>read more
+                          </button>
+      
+                    </a>
 
                   </div>
             </div>
-            <div id="example6-tab5" class="mdui-p-a-2">
+            <div id="introduction" class="mdui-p-a-2">
                     <div class="mdui-container mdui-center">
                             <div class="mdui-card">
                                     <div class="mdui-card-media">
@@ -390,9 +437,11 @@
                             
                     </div>
                     <div class="mdui-divider-dark" style="margin-top:25px;margin-bottom: 15px"></div>
-                    <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-indigo mdui-col-offset-md-10 ">
-                      <i class="mdui-icon material-icons">turned_in_not</i><a href="introduction.html" class="mdui-text-color-white-text">read more</a>
-                    </button>
+                    <a href="introduction.html" class="mdui-text-color-white-text">
+                        <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-indigo mdui-col-offset-md-10 ">
+                            <i class="mdui-icon material-icons">turned_in_not</i>read more
+                          </button>      
+                    </a>
                   </div>
 
     </div>
