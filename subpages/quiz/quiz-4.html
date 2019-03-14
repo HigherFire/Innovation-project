@@ -1,160 +1,100 @@
+
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <title>习题</title>
+  <meta charset="utf-8">
+  <title>同济大学概率论与数理统计教学平台</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://mdui-aliyun.cdn.w3cbus.com/source/dist/css/mdui.min.css"/>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="stylesheet" href="../../css/bootstrap.css">  
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="../../css/bootstrap.min.css">
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../../css/bootstrap.min.css">
-
-    <!-- FontAwesome CSS -->
-    <link rel="stylesheet" href="../../css/font-awesome.min.css">
-
-    <!-- ElegantFonts CSS -->
-    <link rel="stylesheet" href="../../css/elegant-fonts.css">
-
-    <!-- themify-icons CSS -->
-    <link rel="stylesheet" href="../../css/themify-icons.css">
-
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="../../css/swiper.min.css">
-
-    <!-- Styles -->
-
-    <link rel="stylesheet" href="../../style.css">
-
-    <link rel="stylesheet" href="https://mdui-aliyun.cdn.w3cbus.com/source/dist/css/mdui.min.css" />
-
-    <style>
-        #windowsForTest{
-        width: 110%;
-        margin: 0 0 15px;
-    }
-    
-    </style>
+      <!-- FontAwesome CSS -->
+      <link rel="stylesheet" href="../../css/font-awesome.min.css">
+  
+      <!-- ElegantFonts CSS -->
+      <link rel="stylesheet" href="../../css/elegant-fonts.css">
+  
+      <!-- themify-icons CSS -->
+      <link rel="stylesheet" href="../../css/themify-icons.css">
+  
+      <!-- Swiper CSS -->
+      <link rel="stylesheet" href="../../css/swiper.min.css">
+  
 </head>
+<body>
 
-<body class="courses-page">
-    <div class="page-header">
-            <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-toolbar-hide">
-                    <div class="mdui-toolbar mdui-color-indigo ">
-                          <a href="http://math.tongji.edu.cn/"><img class="mdui-img-fluid" style="transform:scale(0.8)" src="../../images/logo.png" alt=""></a>
-                          <div class="mdui-toolbar-spacer"></div>
-                          <a href="../../index.html" class="mdui-ripple mdui-ripple-white">首页</a>
-                          <a href="../../subpages/quiz/quiz-4.html" class="mdui-ripple mdui-ripple-white">习题</a>
-                          <a href="../../subpages/video/video-3.html" class="mdui-ripple mdui-ripple-white">课程视频</a>
-                          <a href="../../subpages/ppt/ppt-1.html" class="mdui-ripple mdui-ripple-white">课件</a>
-                          <a href="../../news.html" class="mdui-ripple mdui-ripple-white">新闻</a>
-                          <a href="../../introduction.html" class="mdui-ripple mdui-ripple-white">课程介绍</a>
-        
-                    </div>
-                        
-                </div>
 
-        <div class="page-header-overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <header class="entry-header">
-                            <h1>习题</h1>
-                        </header><!-- .entry-header -->
-                    </div><!-- .col -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .page-header-overlay -->
-    </div><!-- .page-header -->
-    <div class="mdui-divider" style="margin-top:30px;margin-bottom:30px"></div>
-    <div class="container">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <div class="mdui-toolbar mdui-color-indigo ">
+            <a href="http://math.tongji.edu.cn/"><img class="mdui-img-fluid" style="transform:scale(0.8)" src="../../images/logo.png" alt=""></a>
+            <div class="mdui-toolbar-spacer"></div>
+            <a href="../../index.html" class="mdui-ripple mdui-ripple-white mdui-typo-title">首页</a>
+            <a href="../../subpages/quiz/quiz-4.html" class="mdui-ripple mdui-ripple-white mdui-typo-title">习题</a>
+            <a href="../../subpages/video/video-3.html" class="mdui-ripple mdui-ripple-white mdui-typo-title">课程视频</a>
+            <a href="../../subpages/ppt/ppt-1.html" class="mdui-ripple mdui-ripple-white mdui-typo-title">课件</a>
+            <a href="../../news.html" class="mdui-ripple mdui-ripple-white mdui-typo-title">新闻</a>
+            <a href="../../introduction.html" class="mdui-ripple mdui-ripple-white mdui-typo-title">课程介绍</a>
 
-        <div class="row">
-
-            <div class="mdui-col-xs-3">    
-                <div class="mdui-list">
-                    <a target="targe" class="mdui-list-item mdui-ripple" mdui-dialog="{target: '#notice'}"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>第一章</a>
-                    <a target="targe" class="mdui-list-item mdui-ripple" mdui-dialog="{target: '#notice'}"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>第二章</a>
-                    <a target="targe" class="mdui-list-item mdui-ripple" mdui-dialog="{target: '#notice'}"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>第三章</a>
+      </div>
                     
-                    <a target="targe" href="../../iframe/quiz/quiz-4.html" class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>第四章</a>
-                    <a target="targe" href="../../iframe/quiz/quiz-5.html" class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>第五章</a>
-                    <a target="targe" href="../../iframe/quiz/quiz-p1.html" class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>往年试卷1</a>
-                    <a target="targe" href="../../iframe/quiz/quiz-p2.html" class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>往年试卷2</a>
-                    <a target="targe" href="../../iframe/quiz/quiz-s1_2.html" class="mdui-list-item mdui-ripple"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>spoc第二、三章测试</a>
+    
+        </div>
+      </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">习题</span>
+    <nav class="mdl-navigation">
+        <div class="mdui-list">
+            <a target="targe" class="mdui-list-item mdui-ripple mdui-typo-body-2-opacity" mdui-dialog="{target: '#notice'}"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>第一章</a>
+            <a target="targe" class="mdui-list-item mdui-ripple mdui-typo-body-2-opacity" mdui-dialog="{target: '#notice'}"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>第二章</a>
+            <a target="targe" class="mdui-list-item mdui-ripple mdui-typo-body-2-opacity" mdui-dialog="{target: '#notice'}"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>第三章</a>
+            
+            <a target="targe" href="../../iframe/quiz/quiz-4.html" class="mdui-list-item mdui-ripple mdui-typo-body-2-opacity"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>第四章</a>
+            <a target="targe" href="../../iframe/quiz/quiz-5.html" class="mdui-list-item mdui-ripple mdui-typo-body-2-opacity"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>第五章</a>
+            <a target="targe" href="../../iframe/quiz/quiz-p1.html" class="mdui-list-item mdui-ripple mdui-typo-body-2-opacity"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>往年试卷1</a>
+            <a target="targe" href="../../iframe/quiz/quiz-p2.html" class="mdui-list-item mdui-ripple mdui-typo-body-2-opacity"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>往年试卷2</a>
+            <a target="targe" href="../../iframe/quiz/quiz-s1_2.html" class="mdui-list-item mdui-ripple mdui-typo-body-2-opacity"><i class="mdui-list-item-icon mdui-icon material-icons">adjust</i>spoc第二、三章测试</a>
 
-                    <!-- quiz-x.html是第x章节习题的首页，在首页上每一章下的小节均跳向本章的首页，即quiz-x.html。-->
 
 
-                </div>
-            </div><!-- .col -->
-            <div class="mdui-col-xs-9">
-                <iframe name="targe" src="../../iframe/quiz/quiz-4.html" id="windowsForTest" height="800px" frameborder="0">
-                </iframe>
-            </div>
+        </div>
 
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content"><!-- Your content goes here -->
+      
+    </div>
+    <iframe name="targe" src="../../iframe/quiz/quiz-4.html" width="100%" height="100%" style="position:fixed;top:15%;left:33%;right: 33%;bottom: 25%"></iframe>
+    
+  </main>
+</div>
+<div class="mdui-dialog" id="notice">
+    <div class="mdui-dialog-title">此处尚无内容</div>
+    <div class="mdui-dialog-content">可能是因为课程进度尚未到达，也可能是内容正在进行调整。</div>
+    <div class="mdui-dialog-actions">
+      <button class="mdui-btn mdui-ripple" mdui-dialog-confirm>确认</button>
+    </div>
+  </div>
 
-        </div><!-- .row -->
-    </div><!-- .container -->
-    <div class="mdui-dialog" id="notice">
-            <div class="mdui-dialog-title">此处尚无内容</div>
-            <div class="mdui-dialog-content">可能是因为课程进度尚未到达，也可能是内容正在进行调整。</div>
-            <div class="mdui-dialog-actions">
-              <button class="mdui-btn mdui-ripple" mdui-dialog-confirm>确认</button>
-            </div>
-          </div>
-
-    <footer class="site-footer">
-        <div class="footer-widgets">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-12 col-md-4 col-lg-4 mt-5 mt-md-0">
-                        <div class="foot-contact">
-                            <h2>联系我们</h2>
-
-                            <ul>
-                                <li>地址: 上海市四平路1239号 致远楼</li>
-                                <li>电话: 86-21-65981384</li>
-                            </ul>
-                        </div><!-- .foot-contact -->
-                    </div><!-- .col -->
-                    <div class="col-12 col-md-4 col-lg-3 mt-5 mt-md-0">
-                        <div class="foot-contact">
-                            <h2>快速通道</h2>
-                            <ul>
-                                <li><img src="../../images/link1.png"><a href="http://math.tongji.edu.cn/model/"> 数学建模</a></li>
-                                <li><img src="../../images/link2.png"><a href="http://math.tongji.edu.cn/gaoshu/"> 高等数学</a></li>
-                            </ul>
-                        </div><!-- .foot-contact -->
-                    </div><!-- .col -->
-                    <div class="col-12 col-md-4 col-lg-5">
-                        <div class="foot-about">
-                            <a class="foot-logo" href="#"><img src="../../images/flogo.png" alt=""></a>
-                            <p class="footer-copyright">Copyright &copy;
-                                <script>
-                                    document.write(new Date().getFullYear());
-                                </script>
-                                同济大学数学科学学院 版权所有.
-                            </p>
-                        </div><!-- .foot-about -->
-                    </div><!-- .col -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .footer-widgets -->
-
-    </footer><!-- .site-footer -->
-
-    <script type='text/javascript' src='../../js/jquery.js'></script>
-    <script type='text/javascript' src='../../js/swiper.min.js'></script>
-    <script type='text/javascript' src='../../js/masonry.pkgd.min.js'></script>
-    <script type='text/javascript' src='../../js/jquery.collapsible.min.js'></script>
-    <script type='text/javascript' src='../../js/custom.js'></script>
-    <script type="text/javascript" src="../../js/menu.js"></script>
-    <script src="https://mdui-aliyun.cdn.w3cbus.com/source/dist/js/mdui.min.js"></script>
-
+<script src="../../js/jquery-3.1.1.min.js" ></script>
+<script src="../../js/bootstrap.js" ></script>
+<script src="https://mdui-aliyun.cdn.w3cbus.com/source/dist/js/mdui.min.js"></script>
+<script type='text/javascript' src='../../js/jquery.js'></script>
+<script type='text/javascript' src='../../js/swiper.min.js'></script>
+<script type='text/javascript' src='../../js/masonry.pkgd.min.js'></script>
+<script type='text/javascript' src='../../js/jquery.collapsible.min.js'></script>
+<script type='text/javascript' src='../../js/custom.js'></script>
+<script type="text/javascript" src="../../js/menu.js"></script>
 
 </body>
-
 </html>

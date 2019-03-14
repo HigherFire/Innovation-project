@@ -31,10 +31,12 @@ video::-webkit-media-controls-panel {
 </head>
 
 <body oncontextmenu=self.event.returnValue=false onselectstart="return false">
+    <div class="mdui-container" style="width:1280px;height:720px">
+        <video  id="myVideo" class="mdui-video-fluid" controls>
+            <source src="../file/video/微课第三章例5.mp4"  type="video/mp4">
+        </video>
     
-    <video  id="myVideo" class="mdui-video-fluid" controls>
-        <source src="../file/video/微课第三章例5.mp4"  type="video/mp4">
-    </video>
+    </div>
     <script> 
         function stop(){ 
             return false; 
