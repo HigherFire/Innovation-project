@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <script>
+    function clear() {
+      Source = document.body.firstChild.data;
+      document.open();
+      document.close();
+      document.title = "看不到源代码";
+      document.body.innerHTML = Source;
+    }
+  </script>
+  <style>
+    .comment-body {
+      position: relative;
+    }
+
+    .wp-useragent {
+      color: #3c763d;
+      font-size: 12px;
+    }
+
+    @media (min-width: 640px) {
+      .wp-useragent {
+        position: absolute;
+        top: 15px;
+        right: 18px;
+      }
+    }
+
+    .kratos_widget_author .social-icons a.juejin {
+      background-image: url(https://b-gold-cdn.xitu.io/favicons/v2/apple-touch-icon.png);
+      background-size: 80%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .kratos_widget_author .social-icons a.juejin:hover {
+      border-color: #006cff;
+    }
+
+    .kratos_widget_author .photo-wrapper img {
+      transition: 60s;
+    }
+
+    .kratos_widget_author .photo-wrapper img:hover {
+      transform: rotate(72000deg);
+    }
+
+    ::-webkit-scrollbar {
+      width: 12px;
+      height: 12px;
+    }
+
+    /* 滚动条里面小方块 */
+    ::-webkit-scrollbar-thumb {
+      min-height: 50px;
+      border-radius: 200px;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      background: rgba(51, 153, 255, 1);
+      transition: all .2s;
+    }
+
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ff4081;
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+      background: #81cb82;
+    }
+
+    /* 滚动条里面轨道 */
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+      border-radius: 200px;
+      background: rgba(230, 230, 230, 1);
+    }
+
+    ::-webkit-scrollbar-track:hover {
+      background: rgba(230, 230, 230, .6);
+    }
+
+    ::-webkit-scrollbar-track:active {
+      background: rgba(230, 230, 230, .95);
+    }
+
+    .div {
+      width: 730px;
+    }
+
+    .div img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
+</head>
+
+<body oncontextmenu=self.event.returnValue=false onselectstart="return false">
+  <script>
+    function stop() {
+      return false;
+    }
+    document.oncontextmenu = stop;
+  </script>
+  <SCRIPT>
+    function showDA(sid) {
+      var obj = sid
+      whichEl = eval("DA" + sid);
+      if (whichEl.style.display == "none") {
+        eval("DA" + sid + ".style.display=\"\";");
+      } else {
+        eval("DA" + sid + ".style.display=\"none\";");
+      }
+    }
+  </SCRIPT>
+  <div class="div">
+    <p onclick="showDA(1)" style="cursor: hand">
+      <img src="../file/quiz/易错题/1/1-1.png" title="单击查看参考解答">
+    </p>
+    <p style="display: none" id='DA1' onclick="showDA(1)">
+      <img src="../file/quiz/易错题/1/1-2.png"  style="background-color: #DFE3DD">
+    </p>
+
+    <p onclick="showDA(2)" style="cursor: hand">
+      <img src="../file/quiz/易错题/1/2-1.png" title="单击查看参考解答">
+    </p>
+    <p style="display: none" id='DA2' onclick="showDA(2)">
+      <img src="../file/quiz/易错题/1/2-2.png"  style="background-color: #DFE3DD">
+    </p>
+
+    <p onclick="showDA(3)" style="cursor: hand">
+      <img src="../file/quiz/易错题/1/3-1.png" title="单击查看参考解答">
+    </p>
+    <p style="display: none" id='DA3' onclick="showDA(3)">
+      <img src="../file/quiz/易错题/1/3-2.png"  style="background-color: #DFE3DD">
+    </p>
+
+    <p onclick="showDA(4)" style="cursor: hand">
+      <img src="../file/quiz/易错题/1/4-1.png" title="单击查看参考解答">
+    </p>
+    <p style="display: none" id='DA4' onclick="showDA(4)">
+      <img src="../file/quiz/易错题/1/4-2.png"  style="background-color: #DFE3DD">
+    </p>
+
+    <p onclick="showDA(5)" style="cursor: hand">
+      <img src="../file/quiz/易错题/1/5-1.png" title="单击查看参考解答">
+    </p>
+    <p style="display: none" id='DA5' onclick="showDA(5)">
+      <img src="../file/quiz/易错题/1/5-2.png"  style="background-color: #DFE3DD">
+    </p>
+
+    <p onclick="showDA(6)" style="cursor: hand">
+      <img src="../file/quiz/易错题/1/6-1.png" title="单击查看参考解答">
+    </p>
+    <p style="display: none" id='DA6' onclick="showDA(6)">
+      <img src="../file/quiz/易错题/1/6-2.png"  style="background-color: #DFE3DD">
+    </p>
+
+    <p onclick="showDA(7)" style="cursor: hand">
+      <img src="../file/quiz/易错题/1/7-1.png" title="单击查看参考解答">
+    </p>
+    <p style="display: none" id='DA7' onclick="showDA(7)">
+      <img src="../file/quiz/易错题/1/7-2.png"  style="background-color: #DFE3DD">
+    </p>
+
+    <p onclick="showDA(8)" style="cursor: hand">
+      <img src="../file/quiz/易错题/1/8-1.png" title="单击查看参考解答">
+    </p>
+    <p style="display: none" id='DA8' onclick="showDA(8)">
+      <img src="../file/quiz/易错题/1/8-2.png"  style="background-color: #DFE3DD">
+    </p>
+
+    <p onclick="showDA(9)" style="cursor: hand">
+      <img src="../file/quiz/易错题/1/9-1.png" title="单击查看参考解答">
+    </p>
+    <p style="display: none" id='DA9' onclick="showDA(9)">
+      <img src="../file/quiz/易错题/1/9-2.png"  style="background-color: #DFE3DD">
+    </p>
+    
+    <p onclick="showDA(10)" style="cursor: hand">
+      <img src="../file/quiz/易错题/1/10-1.png" title="单击查看参考解答">
+    </p>
+    <p style="display: none" id='DA10' onclick="showDA(10)">
+      <img src="../file/quiz/易错题/1/10-2.png"  style="background-color: #DFE3DD">
+    </p>
+    
+    <p onclick="showDA(11)" style="cursor: hand">
+      <img src="../file/quiz/易错题/1/11-1.png" title="单击查看参考解答">
+    </p>
+    <p style="display: none" id='DA11' onclick="showDA(11)">
+      <img src="../file/quiz/易错题/1/11-2.png"  style="background-color: #DFE3DD">
+    </p>
+    
+    <p onclick="showDA(12)" style="cursor: hand">
+      <img src="../file/quiz/易错题/1/12-1.png" title="单击查看参考解答">
+    </p>
+    <p style="display: none" id='DA12' onclick="showDA(12)">
+      <img src="../file/quiz/易错题/1/12-2.png"  style="background-color: #DFE3DD">
+    </p>
+    
+    <p onclick="showDA(13)" style="cursor: hand">
+      <img src="../file/quiz/易错题/1/13-1.png" title="单击查看参考解答">
+    </p>
+    <p style="display: none" id='DA13' onclick="showDA(13)">
+      <img src="../file/quiz/易错题/1/13-2.png"  style="background-color: #DFE3DD">
+    </p>
+
+
+  </div>
+</body>
+
+
+</html>
