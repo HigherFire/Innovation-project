@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<head>
+        <link rel="stylesheet" href="../../css/mdui.min.css"/>
+        <script src="../../js/mdui.min.js"></script>
+    
+<style>
+
+video::-internal-media-controls-download-button {
+    display:none;
+}
+
+video::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px); 
+}
+
+</style>
+    <script> 
+        function clear(){ 
+            Source=document.body.firstChild.data; 
+            document.open(); 
+            document.close(); 
+            document.title="看不到源代码"; 
+            document.body.innerHTML=Source; 
+        }
+    </script> 
+</head>
+
+<body oncontextmenu=self.event.returnValue=false onselectstart="return false">
+    <div class="mdui-valign" style="width:1280px;height:720px">
+        <video  id="myVideo" class="mdui-video-fluid" controls>
+            <source src="../file/video/大数定律及中心极限定理.mp4"  type="video/mp4">
+        </video>
+    
+    </div>
+    <script> 
+        function stop(){ 
+            return false; 
+        } 
+        document.oncontextmenu=stop; 
+    </script> 
+</body>
+</html>      
